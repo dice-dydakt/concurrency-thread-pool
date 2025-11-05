@@ -1,0 +1,25 @@
+# Compiled class files
+*.class
+bin/
+
+# Generated images
+*.png
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+.classpath
+.project
+.settings/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.bak
+*~
+
+# Logs
+*.log
