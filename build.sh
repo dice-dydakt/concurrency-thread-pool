@@ -23,12 +23,6 @@ javac -cp bin -d bin src/main/PerformanceBenchmark.java
 echo "Compiling student templates..."
 javac -cp bin -d bin src/templates/MandelbrotTileBased.java 2>/dev/null || echo "  (MandelbrotTileBased has TODOs - skipped)"
 
-# Compile solutions (instructor reference)
-echo "Compiling instructor solutions..."
-javac -cp bin -d bin solutions/MandelbrotTileBasedSolution.java
-javac -cp bin -d bin solutions/MandelbrotForkJoinSolution.java
-javac -cp bin -d bin solutions/CompareAllApproaches.java
-
 echo ""
 echo "Build complete!"
 echo "Compiled classes are in: bin/"
