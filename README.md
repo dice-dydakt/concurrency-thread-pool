@@ -15,14 +15,13 @@ This lab teaches concurrent programming concepts using thread pools (`ExecutorSe
 concurrency-thread-pools/
 ├── build.sh                    # Build script
 ├── run.sh                      # Run script
-│
-├── src/                        # Source code
-│   ├── main/                   # Complete programs (ready to run & study)
-│   │   ├── MandelbrotSequential.java          # Sequential baseline
-│   │   ├── MandelbrotRowBasedSolution.java    # Row-based decomposition
-│   │   └── PerformanceBenchmark.java          # Benchmark utility
-│   ├── templates/              # Student implementation tasks (with TODOs)
-│   │   └── MandelbrotTileBased.java           # Tile-based decomposition template
+└── src/                        # Source code
+    ├── main/                   # Complete programs (ready to run & study)
+    │   ├── MandelbrotSequential.java          # Sequential baseline
+    │   ├── MandelbrotRowBasedSolution.java    # Row-based decomposition
+    │   └── PerformanceBenchmark.java          # Benchmark utility
+    ├── templates/              # Student implementation tasks (with TODOs)
+    │   └── MandelbrotTileBased.java           # Tile-based decomposition template
     └── utils/                  # Shared utilities
         └── MandelbrotUtils.java               # Computation & coloring
 ```
