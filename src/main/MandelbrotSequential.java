@@ -33,6 +33,10 @@ public class MandelbrotSequential {
     public BufferedImage generate() {
         BufferedImage image = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
 
+        // Compute to local array (cache-friendly)
+        int[] pixels = new int[width * height];
+        int index = 0;
+
         for (int py = 0; py < height; py++) {
             for (int px = 0; px < width; px++) {
                 // Map pixel coordinates to complex plane
@@ -42,9 +46,12 @@ public class MandelbrotSequential {
                 double iterations = MandelbrotUtils.computeIterations(cx, cy, maxIterations);
                 int color = MandelbrotUtils.iterationsToColor(iterations, maxIterations);
 
-                image.setRGB(px, py, color);
+                pixels[index++] = color;
             }
         }
+
+        // Bulk write to image (efficient)
+        image.setRGB(0, 0, width, height, pixels, 0, width);
 
         return image;
     }
