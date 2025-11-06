@@ -13,10 +13,8 @@ This lab teaches concurrent programming concepts using thread pools (`ExecutorSe
 
 ```
 concurrency-thread-pools/
-├── README.md                   # This file
 ├── build.sh                    # Build script
 ├── run.sh                      # Run script
-├── .gitignore                  # Git ignore rules
 │
 ├── src/                        # Source code
 │   ├── main/                   # Complete programs (ready to run & study)
